@@ -1,0 +1,37 @@
+VICEGOBLIN STUDIO - END USER LICENCE AGREEMENT
+
+Copyright (c) 2026 ViceGoblin. All rights reserved.
+
+By installing or using ViceGoblin Studio ("the Software") you agree to these terms.
+
+1. LICENCE
+You are granted a personal, non-exclusive, non-transferable licence to install and use the Software on computers you own or control, free of charge.
+
+2. WHAT YOU MAY NOT DO
+You may not, and may not let anyone else:
+  a) sell, rent, lease, sublicense or otherwise commercially distribute the Software;
+  b) copy or redistribute the installer or the installed files, other than by sharing a link to the official download page;
+  c) reverse engineer, decompile, disassemble or try to extract the source code of the Software, except where the law gives you that right despite this restriction;
+  d) remove or alter the Software's name, logo, copyright notices or licence texts, or present the Software or a modified copy of it as your own product;
+  e) use the Software to infringe anyone's copyright or other rights, or to break the rules of any platform you use it with.
+
+3. YOUR CONTENT AND YOUR RESPONSIBILITY
+The Software processes videos on your own computer. You are solely responsible for having the rights to every video you clip, edit or publish, and for following the terms of any platform you publish to, including YouTube's Terms of Service and its copyright and reused-content policies. Posting content you do not have permission to use can lead to takedowns, strikes and loss of your channel.
+
+4. THIRD-PARTY COMPONENTS
+The Software includes open-source components that are licensed under their own terms, listed in THIRD-PARTY-NOTICES.txt. Nothing in this agreement limits your rights under those licences.
+
+5. NO AFFILIATION
+The Software is independent. It is not affiliated with, endorsed by or sponsored by YouTube, Google, Twitch, or any other service. Their names are trademarks of their owners.
+
+6. NO WARRANTY
+The Software is provided "as is", without warranty of any kind, express or implied, including fitness for a particular purpose and non-infringement. Features that rely on third-party services may stop working if those services change.
+
+7. LIMIT OF LIABILITY
+To the fullest extent the law allows, the author is not liable for any loss arising from your use of the Software, including lost data, lost revenue, actions taken against your channel or account by a platform, or claims by rights holders.
+
+8. TERMINATION
+This licence ends automatically if you break these terms. You can end it at any time by uninstalling the Software and deleting its files.
+
+9. CHANGES
+New versions may come with updated terms, which you will be shown before you install them.
