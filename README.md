@@ -58,7 +58,8 @@ No account. No subscription. No terminal. Everything is included in one installe
 
 **Private and safe by design**
 - Your videos, settings and keys never leave your computer. Saved keys are encrypted with Windows' own protection.
-- The app only answers to its own shortcut: other programs and other Windows users on the PC cannot control it.
+- The app only answers to its own shortcut. Web pages, other devices on your network and other Windows users are blocked. A program running as the same Windows user as you can read the access token file, so this does not protect you from malware that is already running under your account.
+- **Update check:** by default the app asks `api.github.com` whether a newer version exists (a normal web request, no personal data, at start and every few hours).
 - **Mobile-friendly interface.**
 
 ## Install
