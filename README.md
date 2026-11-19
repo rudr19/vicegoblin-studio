@@ -6,7 +6,7 @@
 [![Downloads](https://img.shields.io/github/downloads/rudr19/vicegoblin-studio/total?color=121110)](../../releases)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-121110)
 ![Price](https://img.shields.io/badge/price-free-d4ff3a)
-[![Sponsor](https://img.shields.io/badge/sponsor-%E2%99%A5-ea4aaa)](https://github.com/sponsors/rudr19)
+[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/rudr19)
 
 ### [Download for Windows](../../releases/latest/download/ViceGoblinStudio-Setup.exe)
 
