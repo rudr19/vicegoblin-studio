@@ -32,7 +32,7 @@ No account. No subscription. No terminal. Everything is included in one installe
 
 **Captions**
 - **Word-by-word captions** in Clean, Bounce or Hype style, powered by Whisper speech recognition (a model is built in, so it works offline).
-- **Dozens of languages**, including English, Hindi, Spanish, Portuguese and Arabic. Indian scripts are drawn with proper letter shaping. Pick your language in Settings for the best accuracy.
+- **Dozens of languages**, including English, Hindi, Spanish, Portuguese and Arabic. Hindi (Devanagari), Tamil and Bengali are drawn with proper letter shaping (other Indian scripts have not been checked yet). Accuracy differs by language, accent and audio quality. Pick your language in Settings for the best accuracy.
 - **Fix captions:** correct a misheard word or a name, then re-render.
 - **Subtitle files:** download a clip's captions as `.srt` or `.vtt`.
 
@@ -64,7 +64,7 @@ No account. No subscription. No terminal. Everything is included in one installe
 **Private and safe by design**
 - Your videos, settings and keys never leave your computer. Saved keys are encrypted with Windows' own protection.
 - The access key changes every time the app starts and reaches your browser through a one-time ticket, so it never appears in a web address or on a command line.
-- The app only answers to its own shortcut. Web pages, other devices on your network and other Windows users are blocked. A program running as the same Windows user as you can read the access token file, so this does not protect you from malware that is already running under your account.
+- The app only answers to its own shortcut. Web pages and other devices on your network are blocked, and the key file can only be read by your own Windows account. A program running as the same Windows user as you can read the access token file, so this does not protect you from malware that is already running under your account.
 - **Update check:** by default the app asks `api.github.com` whether a newer version exists and fetches a tiny signed settings file for the downloader from `raw.githubusercontent.com` (normal web requests, no personal data, at start and every few hours). Turn it off in Settings, under About; neither request is made then.
 - **Mobile-friendly interface.**
 
@@ -74,7 +74,7 @@ No account. No subscription. No terminal. Everything is included in one installe
 2. Run it. Windows may say **Unknown publisher** because the installer is new and not yet code-signed. Choose *More info*, then *Run anyway*.
 3. Open **ViceGoblin Studio** from the Start menu. It checks that every tool is ready, then opens.
 
-**Requirements:** Windows 10 or 11 (64-bit), about 8 GB RAM, 5 GB free disk space. Mac and Linux are not available yet.
+**Requirements:** Windows 10 or 11 (64-bit; tested on Windows 11), about 8 GB RAM, 5 GB free disk space. Mac and Linux are not available yet.
 
 Each release lists a SHA-256 checksum so you can verify your download. From 1.2.5 each release also carries `manifest-<version>.json` and `manifest-<version>.json.sig`: the signed description (version, installer checksum, size) that the app checks by itself when it updates. You normally do not need to do anything with them.
 
