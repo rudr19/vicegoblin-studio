@@ -6,6 +6,7 @@
 [![Downloads](https://img.shields.io/github/downloads/rudr19/vicegoblin-studio/total?color=121110)](../../releases)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-121110)
 ![Price](https://img.shields.io/badge/price-free-d4ff3a)
+[![Sponsor](https://img.shields.io/badge/sponsor-%E2%99%A5-ea4aaa)](https://github.com/sponsors/rudr19)
 
 ### [Download for Windows](../../releases/latest/download/ViceGoblinStudio-Setup.exe)
 
@@ -81,6 +82,10 @@ Each release lists a SHA-256 checksum so you can verify your download.
 **Why did my live recording capture less than the whole stream?** Live video has to arrive as fast as it plays. If the connection between your PC and YouTube is slower than the stream, the app can only keep part of it. It keeps 720p quality rather than dropping lower, so the clips are made from what was captured. Signing in with a browser (Settings), waiting a while, or using a faster network usually helps. The Diagnose and fix button on a failed project explains what happened.
 
 **The window says it lost connection.** The studio app was closed or updated. Open ViceGoblin Studio from the Start menu again; the page reconnects by itself.
+
+## Support the project
+
+ViceGoblin Studio is free and always will be. If it saves you time and you would like to help keep it improving, you can [sponsor the project on GitHub](https://github.com/sponsors/rudr19). Starring the repository and telling a creator friend helps just as much.
 
 ## Versions
 
