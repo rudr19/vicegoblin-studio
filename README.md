@@ -12,6 +12,8 @@
 
 No account. No subscription. No terminal. Everything is included in one installer.
 
+**Free, and it stays free.** If it helps you, you can [♥ sponsor it from $1](https://github.com/sponsors/rudr19), monthly or one-time. Nothing is locked behind it.
+
 ![Clip editor](docs/editor.jpg)
 
 ## What it does
@@ -85,7 +87,9 @@ Each release lists a SHA-256 checksum so you can verify your download.
 
 ## Support the project
 
-ViceGoblin Studio is free and always will be. If it saves you time and you would like to help keep it improving, you can [sponsor the project on GitHub](https://github.com/sponsors/rudr19). Starring the repository and telling a creator friend helps just as much.
+ViceGoblin Studio is free and always will be. Nothing is locked behind a payment. If it saves you time and you would like to help keep it improving, you can [sponsor the project on GitHub](https://github.com/sponsors/rudr19): any amount from **$1**, monthly or one-time. Support would help pay for things like a code-signing certificate (to remove the "Unknown publisher" warning), testing on real PCs and more languages.
+
+Starring the repository and telling a creator friend helps just as much.
 
 ## Versions
 
