@@ -10,6 +10,24 @@ All notable changes to ViceGoblin Studio are recorded here. The format follows
 
 ## [Unreleased]
 
+## [1.2.5] - 2026-11-19
+
+### Security
+- **Signed updates.** From this version on, the app only installs an update whose release manifest is signed with the publisher's key, and it refuses anything unsigned, tampered, signed with a different key, or older than the version you have. Updating *to* 1.2.5 still works as before; updates *after* it need the signature.
+- **The access key changes every launch** and is handed to your browser through a one-time ticket, so it never appears in a web address or on a command line. The key file can only be read by your own Windows user. A program running as you can still read it: this protects against web pages, other devices and other Windows users, not against malware already on your account.
+- A request that is rejected (wrong header or no sign-in) no longer risks a "connection aborted" error instead of a clear refusal.
+- The README now says plainly who can read the access key and that the update check contacts `api.github.com` by default (you can turn it off in Settings, under About).
+
+### Added
+- **Videos with no audio** now make clips from the parts that move, with a one-sentence note that no speech was found, instead of failing with a blank message.
+- **Audio track choice:** when a video has several audio tracks (for example game plus microphone), the app picks the one with the most speech, tells you which one it used, and lets you switch.
+- **Uninstall** asks whether to delete your projects and settings (default: keep, with the folder size shown) and always removes the access key.
+- **Downloader fixes without a reinstall:** the format choices for the downloader live in a small signed settings file that the app can refresh (only when the update check is on). A bad or unsigned file is ignored and the built-in copy keeps working.
+
+### Improved
+- **Plain-language downloader errors** with a next step (private video, age restriction, login needed, not available in your country, local or network address, no internet, too many requests). Internal addresses, tracebacks and file paths no longer appear in messages.
+- **4K video uses far less memory** while rendering: the first step peaked at about 2,054 MB before and 361 to 530 MB now, and a 4K clip renders noticeably faster.
+
 ## [1.2.4] - 2026-11-18
 
 ### Fixed
