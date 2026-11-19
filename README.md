@@ -35,24 +35,34 @@ No account. No subscription. No terminal. Everything is included in one installe
 - **Dozens of languages**, including English, Hindi, Spanish, Portuguese and Arabic. Hindi (Devanagari), Tamil and Bengali are drawn with proper letter shaping (other Indian scripts have not been checked yet). Accuracy differs by language, accent and audio quality. Pick your language in Settings for the best accuracy.
 - **Fix captions:** correct a misheard word or a name, then re-render.
 - **Subtitle files:** download a clip's captions as `.srt` or `.vtt`.
+- **Words to spell right:** list your names, brands and slang and the captions try to spell them your way.
+- **Caption size and position:** small, medium or large; automatic, top, middle or bottom.
+- **Clean cuts:** a clip starts and ends on a sentence boundary instead of in the middle of a sentence (you can switch this off).
 
 **Editing**
 - **Three vertical layouts:** whole frame on a blurred fill, gameplay plus facecam, or follow the action.
 - **Timeline and transcript editing** with per-clip re-render.
 - **Voice-over mixing** that lowers the original audio under your voice.
+- **Style presets:** save the clip count, length, caption style, layout and caption size and position under a name and apply them in one click.
+- **Download pack:** one zip per clip with the video, a cover picture, the title, the description and the captions.
 - **Audio track choice:** if a video has several audio tracks (for example game plus microphone), the app picks the one with the most speech, tells you which one it used, and lets you switch.
 - **Videos with no sound** still make clips, picked from the parts that move, with a short note that no speech was found.
 - **Where this clip fits:** shows which platforms (Shorts, Reels, Facebook Reels, Moj/Josh/ShareChat) suit the clip's length. Platform limits change, so check each app before posting.
 
 **Getting clips from anywhere**
-- **Upload a file** or **paste a link** to a video you own.
-- **Live recording** from Twitch or YouTube, with a hotkey (F8) to mark great moments. On a slow connection it adapts by itself and never goes below 720p.
+- **Upload a file** or **paste a link** to a video you own, or choose a very large file on your PC and the app reads it where it is, without copying it.
+- **Try the demo video:** a one-minute demo comes with the app so you can see a result in a minute.
+- **Watch folder** (off by default): new videos dropped into a folder you choose become projects by themselves, one at a time. Your originals are copied, never moved.
+- **Live recording** from Twitch or YouTube, with a live preview picture, a running timer and a hotkey (F8) to mark great moments. On a slow connection it adapts by itself and never goes below 720p.
 - **Optional AI clip picking** with a free Gemini key (or your own Claude Code login).
 
 **Publishing**
 - **Batch scheduling to YouTube** with your own Google key. You confirm every upload.
 
 **Looks after itself**
+- **Its own window:** the app opens like a normal Windows program, with a start screen, a first-run welcome and a taskbar icon. Closing it quits the app. A recording keeps running while you use other pages, and the sidebar says so.
+- **Retry or resume** a failed or interrupted project from its saved video without waiting for transcription again, and **time left** while clips render.
+- **Plain-language file errors:** a file open in another program, missing, disk full or damaged gets one clear sentence and a next step.
 - **Diagnose and fix:** if something fails, one button explains in plain words what probably went wrong and applies the fix (set up YouTube support, update the downloader, pick a browser sign-in). It can also make a report you can copy and send, with links and your Windows user name hidden.
 - **Storage:** see disk use per project and delete a project's big original video to free space.
 - **Download quality** of 720p or 1080p.
@@ -72,9 +82,9 @@ No account. No subscription. No terminal. Everything is included in one installe
 
 1. Download `ViceGoblinStudio-Setup.exe` from the [latest release](../../releases/latest).
 2. Run it. Windows may say **Unknown publisher** because the installer is new and not yet code-signed. Choose *More info*, then *Run anyway*.
-3. Open **ViceGoblin Studio** from the Start menu. It checks that every tool is ready, then opens.
+3. Open **ViceGoblin Studio** from the Start menu. It checks that every tool is ready, then opens in its own window.
 
-**Requirements:** Windows 10 or 11 (64-bit; tested on Windows 11), about 8 GB RAM, 5 GB free disk space. Mac and Linux are not available yet.
+**Requirements:** Windows 10 or 11 (64-bit; tested on Windows 11), about 8 GB RAM, 5 GB free disk space. The app window uses Microsoft Edge WebView2, which comes with Windows 11; if it is missing the app opens in your browser instead. Mac and Linux are not available yet.
 
 Each release lists a SHA-256 checksum so you can verify your download. From 1.2.5 each release also carries `manifest-<version>.json` and `manifest-<version>.json.sig`: the signed description (version, installer checksum, size) that the app checks by itself when it updates. You normally do not need to do anything with them.
 

@@ -10,6 +10,42 @@ All notable changes to ViceGoblin Studio are recorded here. The format follows
 
 ## [Unreleased]
 
+## [1.2.6] - 2026-11-19
+
+### Added
+- **The app opens in its own window**, like a normal Windows program: its own title bar, icon and taskbar button, a short start screen, and a full-window welcome the first time. Closing the window quits the app (it asks first if clips are being made or a recording is running). Starting the app a second time brings the open window to the front. The window uses Microsoft Edge WebView2, which comes with Windows 11; if it is missing the app opens in your browser as before, and `--browser` forces that.
+- **Clips start and end on a sentence boundary.** A cut that would begin or stop in the middle of a sentence moves by up to 3 seconds to the nearest clean start or end (never into another clip). On by default, with a switch in Settings.
+- **Words to spell right:** a list of names, brands and slang in Settings that the captions try to spell your way.
+- **Caption size and position** (small, medium, large; automatic, top, middle, bottom) in Settings.
+- **Style presets:** save the clip count, length, caption style, layout and caption size and position under a name and apply them in one click.
+- **Download pack:** one zip per clip with the video, a cover picture, the title, the description and the captions, ready to post.
+- **Try the demo video:** a one-minute demo video comes with the app so a new user can see a result in a minute.
+- **Open a file where it is:** "Choose a file on this PC (no copy)" reads a very large video in place instead of copying it into the app first. The app never moves, copies or deletes the original.
+- **Watch folder** (off by default): new videos dropped into a folder you choose become projects by themselves, one at a time. Videos already there when you switch it on are ignored; originals are copied, never moved.
+- **Live preview of a recording:** the Live recording page shows a recent picture from the stream (a new one every few seconds), how long it has run, the file size and how many marks you pressed, so you can see it is really going on. The sidebar shows the running time too, and running projects show how long they have run. The preview is read-only and adds no load to the recorder; a stream that sends a picture only every 8 seconds or more may show "waiting for the first picture".
+- **Time left** while clips render, worked out from the clips already finished.
+- **Plain-language messages for source-file problems** (file open in another program, missing, disk full, damaged, out of memory), with a next step and no file paths.
+- **Retry or resume** any failed or interrupted project from its saved video, reusing the saved transcript so you do not wait again.
+- **Hook and title suggestions from what is said** in each clip, without an AI key (switch in Settings; your own text is never replaced).
+- The project says in one sentence **why fewer clips were made** than you asked for.
+
+### Improved
+- **The demo video** is now a designed, animated explainer (scenes, moving graphics, a live waveform and a computer voice made on the build PC) instead of a plain gradient; it is still original, with no third-party footage or music.
+- **Settings page** redone: six sections with a jump bar and a save bar that says when changes are not saved.
+- **Motion:** the app fades in, pages slide up a little and buttons answer touches (all switched off if Windows is set to reduce motion).
+- **A recording is visible on every page:** a red "Recording ... keeps going" pill in the sidebar and a mark in the window title, so it never looks stopped when you are on another page.
+- **Text you typed** in the link box and the Live recording fields is kept when you switch pages; leaving Settings with unsaved changes asks first.
+
+### Fixed
+- The first-run welcome screen almost never appeared on a normal install (the app opened before it had decided to show it).
+- A very short clip no longer fails to get a cover picture.
+
+### Notes
+- Google sign-in for YouTube still opens in your normal browser (Google does not allow it inside an app window); the browser gets a one-time ticket first so it can finish the sign-in.
+- Tested on Windows 11. The app window needs WebView2.
+- This build adds about 7 MB of components for the window.
+
+
 ## [1.2.5] - 2026-11-19
 
 ### Security
