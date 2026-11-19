@@ -23,6 +23,8 @@ No account. No subscription. No terminal. Everything is included in one installe
 3. **Edit anything.** Drag the trim handles, fix the captions, change caption style and layout, add your own voice-over, re-render one clip in seconds.
 4. **Post it your way.** Download the clip, grab its subtitle file, or connect your own YouTube channel and queue a batch of Shorts hours apart. Nothing uploads until you confirm.
 
+New here? A one-minute demo video comes with the app, so you can see captioned clips in about a minute before you bring a video of your own.
+
 | | |
 |---|---|
 | ![Projects](docs/project.jpg) | ![New project](docs/new-project.jpg) |
@@ -73,10 +75,10 @@ No account. No subscription. No terminal. Everything is included in one installe
 
 **Private and safe by design**
 - Your videos, settings and keys never leave your computer. Saved keys are encrypted with Windows' own protection.
-- The access key changes every time the app starts and reaches your browser through a one-time ticket, so it never appears in a web address or on a command line.
+- The access key changes every time the app starts and reaches the app window (or your browser, if you use that) through a one-time ticket, so it never appears in a web address or on a command line.
 - The app only answers to its own shortcut. Web pages and other devices on your network are blocked, and the key file can only be read by your own Windows account. A program running as the same Windows user as you can read the access token file, so this does not protect you from malware that is already running under your account.
 - **Update check:** by default the app asks `api.github.com` whether a newer version exists and fetches a tiny signed settings file for the downloader from `raw.githubusercontent.com` (normal web requests, no personal data, at start and every few hours). Turn it off in Settings, under About; neither request is made then.
-- **Mobile-friendly interface.**
+- **Responsive layout** that also works in a narrow window or on a phone-sized browser.
 
 ## Install
 
@@ -99,6 +101,8 @@ Each release lists a SHA-256 checksum so you can verify your download. From 1.2.
 **Why does YouTube ask me to sign in?** For some links YouTube wants a login. In Settings, choose the browser you are signed in with. Or just upload the file.
 
 **Why did my live recording capture less than the whole stream?** Live video has to arrive as fast as it plays. If the connection between your PC and YouTube is slower than the stream, the app can only keep part of it. It keeps 720p quality rather than dropping lower, so the clips are made from what was captured. Signing in with a browser (Settings), waiting a while, or using a faster network usually helps. The Diagnose and fix button on a failed project explains what happened.
+
+**The app opens in my browser instead of its own window.** The window needs Microsoft Edge WebView2, which comes with Windows 11. If it is missing, or the window cannot start, the app opens in your browser and works the same. Installing the WebView2 runtime from Microsoft gives you the window.
 
 **The window says it lost connection.** The studio app was closed or updated. Open ViceGoblin Studio from the Start menu again; the page reconnects by itself.
 
