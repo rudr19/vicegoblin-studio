@@ -51,6 +51,13 @@ New here? A one-minute demo video comes with the app, so you can see captioned c
 - **Videos with no sound** still make clips, picked from the parts that move, with a short note that no speech was found.
 - **Where this clip fits:** shows which platforms (Shorts, Reels, Facebook Reels, Moj/Josh/ShareChat) suit the clip's length. Platform limits change, so check each app before posting.
 
+**For AI agents and automation (new in 1.3.0)**
+- **Use it from an AI agent.** Claude Code, Claude Desktop or any tool that speaks MCP can make clips from a video, read what was found, edit clips, fix captions, approve or reject clips and save the approved ones to a folder, all on your PC. Settings has a **Use with AI agents** section with the exact lines to copy. An agent **cannot publish, delete projects, read your keys or change your settings**: those tools do not exist. See [docs/AGENTS.md](docs/AGENTS.md).
+- **Command-line tool** (`vgctl`) with the same abilities, for scripts.
+- **Why this clip:** every clip says in a sentence why it was picked (you marked it, chat got busy, one of the loudest parts, it opens with a question, the AI chose it), or says that nothing stood out.
+- **Approve or reject** each clip, by hand or through an agent.
+- **Ask the editor:** type a plain-English request for one clip ("make the captions bigger and start two seconds later"); only allowed edits are applied. Needs a free Gemini key or Claude Code.
+
 **Getting clips from anywhere**
 - **Upload a file** or **paste a link** to a video you own, or choose a very large file on your PC and the app reads it where it is, without copying it.
 - **Try the demo video:** a one-minute demo comes with the app so you can see a result in a minute.
@@ -97,6 +104,8 @@ Each release lists a SHA-256 checksum so you can verify your download. From 1.2.
 **Are my videos uploaded anywhere?** No. Transcription, clipping and rendering all happen on your computer. The only things that leave it are what you choose to send: a YouTube upload you confirm, or text for the optional AI picker.
 
 **What can I clip?** Your own videos, or ones whose owner has given you permission. Reusing someone else's video without permission can get your channel a copyright strike.
+
+**Can an AI agent use it?** Yes, from 1.3.0. In Settings, "Use with AI agents" gives the line to add to Claude Code or Claude Desktop (any tool that supports MCP works). The agent can make and edit clips and save the ones you approve; it cannot publish, delete or touch your keys and settings. Nothing leaves your PC except what the agent itself reads and writes in your conversation. See [docs/AGENTS.md](docs/AGENTS.md).
 
 **Why does YouTube ask me to sign in?** For some links YouTube wants a login. In Settings, choose the browser you are signed in with. Or just upload the file.
 

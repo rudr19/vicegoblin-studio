@@ -10,6 +10,19 @@ All notable changes to ViceGoblin Studio are recorded here. The format follows
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-11-24
+
+### Added
+- **AI agents can use the app.** Claude Code, Claude Desktop or any other tool that speaks MCP can make clips from a video, read what was found, edit clips, fix captions, approve or reject clips, and save the approved ones to a folder, all on your PC. There is also a command-line tool (`vgctl`) for scripts and for agents that can run commands. **Agents can never publish, delete projects, read your keys or change your settings: those tools do not exist.** Settings has a new **Use with AI agents** section with the exact lines to copy for your PC. Guide: `docs/AGENTS.md`.
+- **Why each clip was picked.** Every clip says in one or two honest sentences why it was chosen (you pressed F8, chat got busy, one of the loudest parts, it opens with a question, the AI chose it). When nothing stood out it says so instead of inventing a reason.
+- **Approve or reject clips.** Each clip card has Approve and Reject buttons (with Undo); rejected clips are dimmed. The same marks are used by agents, so you and an agent can agree which clips are good before anything is saved or posted.
+- **Ask the editor.** In the clip editor, type a plain-English request ("make the captions bigger and start two seconds later") and the app applies only the allowed edits to that clip, using the AI engine you already set up (a free Gemini key or Claude Code). Anything the AI says outside the allowed edits is ignored.
+- Captions can now have their **size and position set per clip**, not only in Settings.
+
+### Notes
+- Nothing about the agent connection leaves your PC. It signs in the way a second launch of the app does (the access key file only your Windows user can read, a one-time ticket, a session cookie). The company behind your agent sees what the agent reads and writes in your conversation (project names, clip titles, file paths).
+- New local routes for the agent connection: `/api/open-path`, `/api/clip/review`, `/api/clip/ask` and `/api/agent/setup`. All are covered by the route audit.
+
 ## [1.2.6] - 2026-11-19
 
 ### Added
